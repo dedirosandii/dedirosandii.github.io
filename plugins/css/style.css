@@ -1,0 +1,425 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	Project Name
+VERSION:	Versoin Number
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+/*  typography */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: #333;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+
+
+h2, .h2 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+h3, .h3 {
+  font-size: 32px;
+}
+
+
+h4, .h4 {
+  font-size: 26px;
+}
+
+h5, .h5 {
+  font-size: 22px;
+}
+
+h6, .h6 {
+  font-size: 18px;
+}
+
+/* Button style */
+.btn {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  padding: 13px 30px;
+  border-radius: 6px;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+  font-weight: 600;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.btn-primary {
+  background:#0c2461;
+  color: #fff;
+  border-color: #0c2461;
+}
+
+.btn-primary:active, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary.active {
+  background: #29458a !important;
+  border-color: #29458a !important;
+}
+
+
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background: #000000;
+  color: #fff;
+}
+
+::selection {
+  background: #000000;
+  color: #fff;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a,
+button,
+select {
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+a:focus,
+button:focus,
+select:focus {
+  outline: 0;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.slick-slide {
+  outline: 0;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+
+
+.section-sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-hello {
+  margin-bottom: 10px;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.border-default {
+  border-color: #E2E2E2 !important;
+}
+
+/* overlay */
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: .5;
+}
+
+.outline-0 {
+  outline: 0 !important;
+}
+
+.rounded, .card, .card-icon {
+  border-radius: 12px !important;
+}
+
+.shadow, .navigation.nav-bg, .search-wrapper .form-control, .card {
+  box-shadow: 0px 15px 60px rgba(62, 62, 62, 0.102) !important;
+}
+
+.d-unset {
+  display: unset !important;
+}
+
+.bg-primary {
+  background: #FF0043 !important;
+}
+
+.text-primary {
+  color: #FF0043 !important;
+}
+
+.text-light {
+  color: #999 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.mb-70 {
+  margin-bottom: 70px !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.mb-90 {
+  margin-bottom: 90px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.navigation {
+  transition: .2s ease;
+}
+
+.navigation.nav-bg {
+  background: #fff;
+}
+
+
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-item .nav-link {
+  text-transform: capitalize;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #222;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #2980b9;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 20px;
+  font-size: 15px;
+}
+
+
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper .form-control {
+  height: 46px;
+  border: 0;
+  outline: 0;
+}
+
+.search-wrapper .form-control::-webkit-input-placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.search-wrapper .form-control::-moz-placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.search-wrapper .form-control::-ms-input-placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.search-wrapper .form-control::placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.search-wrapper .form-control-lg {
+  height: 70px;
+}
+
+.search-wrapper .form-control.active.focus-visible {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-wrapper button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.search-wrapper button i {
+  color: #FF0043;
+}
+
+.card {
+  transition: .2s ease;
+  border: 0;
+}
+
+.card-lg .card-body {
+  padding: 35px;
+}
+
+.card-icon {
+  color: #fff;
+  height: 55px;
+  width: 60px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 27px;
+  display: block;
+  margin-top: 40px;
+}
+
+.card-text {
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.card-title {
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: medium;
+  text-align: center;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card:hover {
+  box-shadow: 0px 15px 60px rgba(62, 62, 62, 0.2) !important;
+}
+
+.social-icons {
+  margin-bottom: 0;
+}
+
+.social-icons a {
+  display: block;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  background: #FF0043;
+  border-radius: 6px;
+}
+
+
+
+
+
+
+/*# sourceMappingURL=maps/style.css.map */
