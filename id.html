@@ -30,8 +30,12 @@
         <div class=container>
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                 <a class=navbar-brand href="id.html"><img class="img-fluid" src="images/logo.png" alt="godocs"></a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
-                    <i class="fas fa-align-right h4 text-dark d-none"></i></button>
+                <select class="navbar-toggler border-0 nav-item d-xl-none" id=select-language onchange="location=this.value;">
+                    <option value=/ />EN</option>
+                    <option value=id.html selected>ID</option>
+                </select>
+                <!-- <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+                    <i class="fas fa-align-right h4 text-dark d-none"></i></button> -->
                 <div class="collapse navbar-collapse text-center" id=navigation>
                     <ul class="navbar-nav mx-auto align-items-center">
                         <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -54,14 +58,37 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-7 text-center text-lg-left">
-                    <h1 class="mb-4"> <img src="images/code.png" width="100px" alt="illustration" class="img-fluid">
+                    <h1 class="mb-4 d-xl-none"> <img src="images/82113825_2311583075612959_5661402379489116160_o.jpg" width="100px" alt="illustration" class="img-fluid rounded-circle">
                     </h1>
-                    <h2 class=section-hello>Halo Saya</h2>
-                    <h2 class=section-hello>Dedi Rosandi</h2>
+                    <h1 class="mb-4 d-lg-block d-none"> <img src="images/code.png" width="100px" alt="illustration" class="img-fluid">
+                    </h1>
+                    <h5 class=section-hello>Halo Saya</h5>
+                    <h5 class=section-hello>Dedi Rosandi</h5>
                     <p class="mb-4">Saya seorang sarjana teknik informatika. Memiliki kemampuan mengembangkan &
                         membangun sebuah aplikasi android, membuat website, menginstalasi dan memperbaiki jaringan. Saya
                         juga memiliki komunikasi yang baik, mempunyai keterampilan,dapat bekerja dengan tim, kreatif dan
                         Cepat belajar.
+                    </p>
+                    <h5 class=section-hello>Keterampilan</h5>
+                    <p class="mb-4">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100">Dasar Pemrograman 60%</div>
+                    </div>
+                    </p>
+
+                    <p class="mb-4">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">Dasar Jaringan 85%</div>
+                    </div>
+                    </p>
+
+                    <p class="mb-4">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">Desain 50%</div>
+                    </div>
                     </p>
 
                     <a href="mailto:dedirosandi@yahoo.com?&subject=Big%20Project&body=Body-goes-here"
@@ -72,7 +99,7 @@
           <button type="submit" class="btn btn-primary">Search</button>
         </form> -->
                 </div>
-                <div class="col-lg-4 d-lg-block">
+                <div class="col-lg-4 d-lg-block d-none">
                     <img src="images/82113825_2311583075612959_5661402379489116160_o.jpg" alt="illustration"
                         class="img-fluid rounded-circle">
                 </div>
@@ -84,7 +111,7 @@
     <!-- Work Experience -->
     <section class="section pb-0">
         <div class=container>
-            <h2 class=section-title>Pengalaman kerja</h2>
+            <h5 class=section-title>Pengalaman kerja</h5>
             <div class=row>
 
                 <!-- work -->
@@ -227,7 +254,7 @@
                     <img src="images/Envelope-by-undraw.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 text-lg-left text-center">
-                    <h2 class="mb-3">Ada pertanyaan?</h2>
+                    <h5 class="mb-3">Ada pertanyaan?</h5>
                     <p>Silakan kirim pertanyaan di bawah ini.</p>
                     <a href="mailto:dedirosandi@yahoo.com?&subject=Ask%20Project&body=Body-goes-here"
                         class="btn btn-primary">Kirim</a>
@@ -240,7 +267,7 @@
     <!-- Education -->
     <section class="section pb-0">
         <div class=container>
-            <h2 class=section-title>Pendidikan</h2>
+            <h5 class=section-title>Pendidikan</h5>
             <div class=row>
 
                 <!-- work -->
@@ -300,7 +327,7 @@
     <!-- Project -->
     <section class="section pb-0">
         <div class=container>
-            <h2 class=section-title>Proyek</h2>
+            <h5 class=section-title>Proyek</h5>
             <div class=row>
 
                 <!--  PROJECT 1 -->
